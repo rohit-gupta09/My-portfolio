@@ -1,10 +1,13 @@
 import React from 'react'
 import "./card.css"
-
+import Logo from "../src/img/logo.png" 
+const imgs={Logo};
 const Card = (props) => (
     <div className="card boxcard">
-      <img src={ props.imgUrl } 
+      <img src={props.imgUrl}
+      
         alt={ props.alt || 'Image' } />
+      {console.log(props.imgUrl+" ")}
       <div className="card-content card2">
         <h2>{ props.title }</h2>
         <p>{ props.content }</p>
@@ -27,24 +30,18 @@ const Card = (props) => (
 function CardsSlider() {
 
     const cardsData = [
-        {id: 1, title: 'CARD 1', content: 'Clark Kent', imgUrl: 'https://unsplash.it/200/200'},
+        {id: 1, title: 'UPES ACM ACM-W WEB APP', content: 'This application is created for UPES ACM & ACM-W student chapter team to showcase the work and initiatives to masses.', imgUrl:Logo},
         {id: 2, title: 'CARD 2', content: 'Bruce Wayne', imgUrl: 'https://unsplash.it/201/200'},
         {id: 3, title: 'CARD 3', content: 'Peter Parker', imgUrl: 'https://unsplash.it/200/201'},
         {id: 4, title: 'CARD 4', content: 'Tony Stark', imgUrl: 'https://unsplash.it/201/201'},
-        {id: 5, title: 'CARD 5', content: 'Reed Richards', imgUrl: 'https://unsplash.it/202/200'},
-        {id: 6, title: 'CARD 6', content: 'Wade Wilson', imgUrl: 'https://unsplash.it/200/199'},
-        {id: 7, title: 'CARD 7', content: 'Peter Quill', imgUrl: 'https://unsplash.it/199/199'},
-        {id: 8, title: 'CARD 8', content: 'Steven Rogers', imgUrl: 'https://unsplash.it/199/200'},
-        {id: 9, title: 'CARD 9', content: 'Bruce Banner', imgUrl: 'https://unsplash.it/200/198'},
-        {id: 10, title: 'CARD 10', content: 'Vincent Strange', imgUrl: 'https://unsplash.it/198/199'},
       ]
 
     return(
         <div className="container con">
           <h1 style={{ 'text-align': 'center' }}>
-            React Card Slider
+            Projects
           </h1>
-          
+          {console.log(Logo.url)}
           <CardContainer cards={ cardsData } />
         </div>
       );

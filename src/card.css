@@ -33,7 +33,7 @@
 
 .boxcard {
   flex: 1 0 250px;
-  box-shadow: 0 1px 1rem -4px #000;
+  box-shadow: 0 1px 1rem -4px rgb(254, 222, 14);
   background: #fff;
   margin: 1rem;
   overflow: hidden;
@@ -41,15 +41,10 @@
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
-.boxcard img {
-  width: 250px;
-  height: 250px;
-  -o-object-fit: center;
-     object-fit: center;
-}
+
 .boxcard:hover {
-  box-shadow: 0 4px 1rem -4px #000;
-  transform: translateY(-3px);
+  box-shadow: 0 4px 1rem -4px rgb(244, 173, 7);
+  transform: translateY(-4px);
 }
 
 .card2 {
